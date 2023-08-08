@@ -14,6 +14,7 @@ const gamesData = [
         imageUrl3: "callofduty-3.jpg",
         imageUrl4: "callofduty-4.jpg",
         ratings: 4.5,
+        isFavorite : false,
         
     },
     {
@@ -31,6 +32,7 @@ const gamesData = [
         imageUrl3: "leftfordead-3.jpg",
         imageUrl4: "leftfordead-4.jpg",
         ratings: 3.0,
+        isFavorite : false,
     },
     {
         id: 3,
@@ -47,6 +49,7 @@ const gamesData = [
         imageUrl3: "dota-3.jpg",
         imageUrl4: "dota-4.jpg",
         ratings: 5.0,
+        isFavorite : false,
     },
     {
         id: 4,
@@ -63,6 +66,7 @@ const gamesData = [
         imageUrl3: "fifa24-3.jpg",
         imageUrl4: "fifa24-4.jpg",
         ratings: 5.0,
+        isFavorite : false,
     },
 ]
 

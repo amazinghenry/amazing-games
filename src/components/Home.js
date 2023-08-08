@@ -3,6 +3,10 @@ import data from '../data/index.js'
 import GameCard from "./GameCard.js";
 import HeaderImage from "./HeaderImage.js";
 import Navbar from "./Navbar.js";
+import action from '../assets/icon-action.png'
+import sport from '../assets/icon-sport.png'
+import adventure from '../assets/icon-adventure.png'
+import racing from '../assets/icon-racing.png'
 
 
 const Home = () => {
@@ -81,17 +85,51 @@ const Home = () => {
 
     return ( 
         <section className="container-fluid">
-           <Navbar searchTerm={searchTerm} setSearchTerm = {setSearchTerm} handleSearch = {handleSearch} />
+           <Navbar 
+           searchTerm={searchTerm}
+           setSearchTerm = {setSearchTerm}
+           handleSearch = {handleSearch} 
+           />
+
+
            <div className="container wrapper">
             <div className="header-section">
               <HeaderImage />
             </div>
+
+
           <div className="aside-section">
             <h2 className="aside-category-title">Categories</h2>
             <div className="category-group">
-              <button className={`category-item ${selectedCategory === "action" ? "active" : ""}`} onClick={()=>handleFilterByCategory("action")}> <i class="fa-solid fa-user"></i> Action</button>
-              <button className={`category-item ${selectedCategory === "sport" ? "active" : ""}`} onClick={()=>handleFilterByCategory("sport")}> <i class="fa-solid fa-futbol"></i> Sport</button>
-              <button className={`category-item ${selectedCategory === "adventure" ? "active" : ""}`} onClick={()=>handleFilterByCategory("adventure")}> <i class="fa-solid fa-futbol"></i> Adventure</button>
+
+              <button
+                className={`category-item ${selectedCategory === "action" ? "active" : ""}`}
+                onClick={()=>handleFilterByCategory("action")}>
+                <img src={action} className="category-item-icon" alt="action display" />
+                Action
+              </button>
+
+              <button
+                className={`category-item ${selectedCategory === "sport" ? "active" : ""}`}
+                onClick={()=>handleFilterByCategory("sport")}>
+                <img src={sport} className="category-item-icon" alt="sport display" />
+                Sport
+              </button>
+
+              <button
+                className={`category-item ${selectedCategory === "adventure" ? "active" : ""}`}
+                onClick={()=>handleFilterByCategory("adventure")}>
+                <img src={adventure} className="category-item-icon" alt="adventure display" />
+                Adventure
+              </button>
+
+              <button
+                className={`category-item ${selectedCategory === "racing" ? "active" : ""}`}
+                onClick={()=>handleFilterByCategory("racing")}>
+                <img src={racing} className="category-item-icon" alt="racing display" />
+                Racing
+              </button>
+
             </div>
             <button className="reset-button" onClick={handleResetCategory}>Reset</button>
 

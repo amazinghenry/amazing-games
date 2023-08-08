@@ -76,15 +76,10 @@ nav {
   text-decoration: none;
 }
 
-
-
 section {
   background-color: var(--sec-color);
   padding: 40px 0;
 }
-
-
-
 
 .header-image {
   padding: 0;
@@ -103,7 +98,6 @@ button.owl-prev > span
 .header-section {
   grid-area: header;
 }
-
 
 .aside-section {
   grid-area: aside;
@@ -158,7 +152,7 @@ button.owl-prev > span
 .game-group {
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
 }
 
@@ -193,6 +187,7 @@ button.owl-prev > span
   position: absolute;
   top: 12px;
   right: 5px;
+  cursor: pointer;
 }
 
 
@@ -204,43 +199,34 @@ button.owl-prev > span
     grid-template-columns: 1fr;
     gap: 10px;
   }
-
   .game-card {
     width: 100%;
     flex-direction: row;
   }
-
   .game-title {
     color: #1A1E35;
     font-size: 0.9rem;
     font-weight: 700;
     margin: 0;
   }
-
   .game-image {
     width: 120px;
     height: 100%;
   }
-
   .game-price,
   .game-rating {
     font-size: 0.8rem;
   }
-
   .sort-item {
     font-size: 0.8rem;
   }
-
   .category-item {
     font-size: 0.8rem;
   }
-
   .reset-button {
     font-size: 0.8rem;
   }
-
 }
-
 
 .sort-item {
   border: none;
@@ -257,15 +243,21 @@ button.owl-prev > span
   background-color: var(--pri-color);
 }
 
-
 .category-item {
   border: none;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #cef7fd;
   padding: 10px 16px;
   width: 100%;
   margin-bottom: 10px;
   border-radius: 5px;
+}
+
+.category-item-icon {
+  width: 16px;
+  margin-right: 5px;
 }
 
 .reset-button {
@@ -290,5 +282,15 @@ button.owl-prev > span
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
   }
-  
+}
+
+
+footer {
+  text-align: center;
+  background-color: #0c0e19;
+  padding: 20px 0;
+}
+
+.footer-content {
+  color: #7FFFD4;
 }
